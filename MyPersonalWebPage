@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shirley's Web Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header id="top">
+                <img src="jamshid.jpg">
+                <div id="nav">
+                    <h1>Shirley</h1>
+                    <nav>
+                        <a href="#">Space</a>   
+                        <a href="#">Planet</a> 
+                        <a href="#">Earth</a>
+                        <a href="#">Mars</a>   
+                        <a href="#">Projects</a> 
+                        <a href="#">Plants</a>  
+                        <a href="#">Buildings</a>
+                    </nav>
+                </div>
+            </header>
+            
+            <section id="content">
+              <h2>About YunQing Chen </h2>
+              
+                <p> As an organized self-starter passionate about Architechture, Horticulture, Green Energy .
+                    I believe I would make a valuable contribution to human beings.
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
+ 
+BIN +55.2 KB 
+jamshid.jpg
+Comment on this file
+
+ 72  
+style.css
+Comment on this file
+@@ -0,0 +1,72 @@
+html {
+    line-height: 1.6;
+    color: #22292f;
+    font-family: system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif
+}
+
+#container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+#top img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+#content {
+    max-width: 40rem;
+    padding-left: 8rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    color: #8795a1;
+}
+
+nav a:hover {
+    color: #22292f;
+}
+
+@media only screen and (max-width: 950px) {
+    #container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }  
+
+    #content {
+        max-width: 80rem;
+        padding-left: 1rem;
+    }
+
+    #top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav {
+        align-items: center;
+    }
